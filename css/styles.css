@@ -89,10 +89,13 @@ header {
 =========================== */
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("../images/hero.jpg") center/cover no-repeat;
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
@@ -176,7 +179,29 @@ section p {
 /* ===========================
    SERVICES
 =========================== */
+.services-btn {
+  text-align: center;
+  margin-top: 50px;
+}
 
+.services-btn .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 35px;
+  background: #2e8b57;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.services-btn .btn:hover {
+  background: #246b44;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(46, 139, 87, 0.3);
+}
 .services {
   background: #f4f4f4;
 }
