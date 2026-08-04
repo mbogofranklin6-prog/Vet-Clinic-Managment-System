@@ -35,4 +35,5 @@ petForm.addEventListener("submit", function (event) {
 
   // Clear the form
   petForm.reset();
+  window.location.href = "dashboard.html"
 });
