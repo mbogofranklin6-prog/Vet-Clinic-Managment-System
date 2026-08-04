@@ -1,72 +1,38 @@
-// ================================
-// PawCare Veterinary Clinic
-// Pet Registration Script
-// ================================
-
+// Select the registration form
 const petForm = document.getElementById("petForm");
 
+// Listen for form submission
 petForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  // Get form values
-  const ownerName = document.getElementById("ownerName").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const petName = document.getElementById("petName").value.trim();
-  const species = document.getElementById("species").value;
-  const breed = document.getElementById("breed").value.trim();
-  const gender = document.getElementById("gender").value;
-  const age = document.getElementById("age").value;
-  const weight = document.getElementById("weight").value;
-  const colour = document.getElementById("colour").value.trim();
-  const medicalHistory = document.getElementById("medicalHistory").value.trim();
-
-  // Validate required fields
-  if (ownerName === "" || phone === "" || petName === "" || species === "") {
-    alert("Please fill in all required fields.");
-    return;
-  }
-
-  // Create pet object
+  // Collect form data
   const pet = {
-    id: Date.now(),
-    ownerName,
-    phone,
-    email,
-    petName,
-    species,
-    breed,
-    gender,
-    age,
-    weight,
-    colour,
-    medicalHistory,
-    dateRegistered: new Date().toLocaleDateString(),
+    ownerName: document.getElementById("ownerName").value,
+    phone: document.getElementById("phone").value,
+    email: document.getElementById("email").value,
+    petName: document.getElementById("petName").value,
+    species: document.getElementById("species").value,
+    breed: document.getElementById("breed").value,
+    gender: document.getElementById("gender").value,
+    age: document.getElementById("age").value,
+    weight: document.getElementById("weight").value,
+    colour: document.getElementById("colour").value,
+    history: document.getElementById("history").value,
+    emergency: document.getElementById("emergency").value,
   };
 
-  // Retrieve existing pets
+  // Get existing pets or create an empty array
   let pets = JSON.parse(localStorage.getItem("pets")) || [];
 
-  // Check for duplicate registration
-  const duplicate = pets.find(
-    (existingPet) =>
-      existingPet.petName.toLowerCase() === petName.toLowerCase() &&
-      existingPet.ownerName.toLowerCase() === ownerName.toLowerCase(),
-  );
-
-  if (duplicate) {
-    alert("This pet has already been registered.");
-    return;
-  }
-
-  // Save new pet
+  // Add the new pet
   pets.push(pet);
 
+  // Save back to localStorage
   localStorage.setItem("pets", JSON.stringify(pets));
 
   // Success message
-  alert("Pet registered successfully!");
+  alert("✅ Pet registered successfully!");
 
-  // Reset form
+  // Clear the form
   petForm.reset();
 });
