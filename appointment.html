@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Appointment | PawCare</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+    <!-- ================= HEADER ================= -->
+
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -31,126 +38,96 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="register.html">Register Pet</a></li>
-          <li><a href="appointment.html" class="active">Appointment</a></li>
+          <li><a href="appointment.html" class="active">Appointments</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- ================= PAGE HEADER ================= -->
+
     <section class="page-header">
       <h1>Book an Appointment</h1>
-
-      <p>
-        Schedule a consultation with one of our veterinary doctors. Choose your
-        preferred date and time.
-      </p>
+      <p>Schedule a consultation for your pet in a few easy steps.</p>
     </section>
 
-    <section class="registration">
+    <!-- ================= APPOINTMENT FORM ================= -->
+
+    <section class="appointment">
       <div class="form-container">
-        <h2>Appointment Booking Form</h2>
-
         <form id="appointmentForm">
-          <div class="form-row">
-            <div class="input-group">
-              <label>Owner Name</label>
+          <h2>Appointment Details</h2>
 
-              <input type="text" id="owner" required />
-            </div>
-
-            <div class="input-group">
-              <label>Pet Name</label>
-
-              <input type="text" id="pet" required />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="input-group">
-              <label>Species</label>
-
-              <select id="species">
-                <option>Dog</option>
-                <option>Cat</option>
-                <option>Rabbit</option>
-                <option>Goat</option>
-                <option>Cattle</option>
-                <option>Sheep</option>
-                <option>Horse</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            <div class="input-group">
-              <label>Service Required</label>
-
-              <select id="service">
-                <option>General Consultation</option>
-                <option>Vaccination</option>
-                <option>Surgery</option>
-                <option>Deworming</option>
-                <option>Treatment</option>
-                <option>Pregnancy Diagnosis</option>
-                <option>Emergency Care</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="input-group">
-              <label>Appointment Date</label>
-
-              <input type="date" id="date" required />
-            </div>
-
-            <div class="input-group">
-              <label>Preferred Time</label>
-
-              <input type="time" id="time" required />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="input-group">
-              <label>Veterinarian</label>
-
-              <select id="doctor">
-                <option>Dr. Franklin</option>
-                <option>Dr. James</option>
-                <option>Dr. Mercy</option>
-                <option>Dr. Peter</option>
-              </select>
-            </div>
-
-            <div class="input-group">
-              <label>Contact Number</label>
-
-              <input type="tel" id="phone" required />
-            </div>
+          <div class="input-group">
+            <label for="petName">Pet Name</label>
+            <input type="text" id="petName" required />
           </div>
 
           <div class="input-group">
-            <label>Additional Notes</label>
+            <label for="ownerName">Owner Name</label>
+            <input type="text" id="ownerName" required />
+          </div>
 
-            <textarea
-              id="notes"
-              rows="5"
-              placeholder="Describe the pet's condition..."
-            ></textarea>
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required />
+          </div>
+
+          <div class="input-group">
+            <label for="service">Service</label>
+
+            <select id="service" required>
+              <option value="">Select Service</option>
+              <option>Vaccination</option>
+              <option>General Check-up</option>
+              <option>Surgery</option>
+              <option>Dental Care</option>
+              <option>Emergency Care</option>
+              <option>Deworming</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="doctor">Veterinarian</label>
+
+            <select id="doctor" required>
+              <option value="">Select Veterinarian</option>
+              <option>Dr. James</option>
+              <option>Dr. Sarah</option>
+              <option>Dr. Peter</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" required />
+          </div>
+
+          <div class="input-group">
+            <label for="time">Appointment Time</label>
+            <input type="time" id="time" required />
+          </div>
+
+          <div class="input-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" rows="4"></textarea>
           </div>
 
           <button type="submit" class="btn">
             <i class="fa-solid fa-calendar-check"></i>
-
             Book Appointment
           </button>
         </form>
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-      <p>©2026 PawCare Veterinary Clinic Management System</p>
+      <p>
+        2026 PawCare Veterinary Clinic Management System. All Rights Reserved.
+      </p>
     </footer>
 
     <script src="appointment.js"></script>

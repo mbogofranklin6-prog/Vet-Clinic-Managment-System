@@ -550,3 +550,80 @@ td button {
 td button:hover {
   background: #b52b3a;
 }
+.page-header {
+  background: #0f766e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.page-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1rem;
+}
+
+/* ================= APPOINTMENT ================= */
+
+.appointment {
+  padding: 60px 20px;
+  background: #f4f7fa;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0f766e;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #115e59;
+}
