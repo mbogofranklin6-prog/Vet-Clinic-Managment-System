@@ -767,10 +767,6 @@ td button:hover {
   line-height: 1.6;
 }
 
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
