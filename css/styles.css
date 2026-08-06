@@ -776,3 +776,57 @@ td button:hover {
     text-align: center;
   }
 }
+.contact-container{
+    display:flex;
+    gap:40px;
+    padding:70px 10%;
+    flex-wrap:wrap;
+}
+
+.contact-info,
+.contact-form{
+    flex:1;
+}
+
+.contact-info h2{
+    color:#0f766e;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:20px 0;
+    font-size:17px;
+}
+
+.contact-info i{
+    color:#0f766e;
+    width:30px;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form button{
+    background:#0f766e;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.contact-form button:hover{
+    background:#0d5f59;
+}
