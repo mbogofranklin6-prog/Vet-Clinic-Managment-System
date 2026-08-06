@@ -873,3 +873,60 @@ td button:hover {
     color:#555;
     line-height:1.7;
 }
+.form-section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 14px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-group button:hover {
+  background: #1b5e20;
+}
