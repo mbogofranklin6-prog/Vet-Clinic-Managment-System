@@ -830,48 +830,48 @@ td button:hover {
 .contact-form button:hover {
   background: #0d5f59;
 }
-.services-section{
-    padding:70px 10%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+.services-section {
+  padding: 70px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
-.service-card{
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
-    transition:.3s;
+.service-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
-.service-card:hover{
-    transform:translateY(-10px);
-    background:#0f766e;
-    color:#fff;
+.service-card:hover {
+  transform: translateY(-10px);
+  background: #0f766e;
+  color: #fff;
 }
 
 .service-card:hover h3,
 .service-card:hover p,
-.service-card:hover i{
-    color:#fff;
+.service-card:hover i {
+  color: #fff;
 }
 
-.service-card i{
-    font-size:50px;
-    color:#0f766e;
-    margin-bottom:20px;
+.service-card i {
+  font-size: 50px;
+  color: #0f766e;
+  margin-bottom: 20px;
 }
 
-.service-card h3{
-    margin-bottom:15px;
-    color:#0f766e;
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #0f766e;
 }
 
-.service-card p{
-    color:#555;
-    line-height:1.7;
+.service-card p {
+  color: #555;
+  line-height: 1.7;
 }
 .form-section {
   max-width: 900px;
@@ -929,4 +929,21 @@ td button:hover {
 
 .form-group button:hover {
   background: #1b5e20;
+}
+.pet-card {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card p {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.pet-card strong {
+  color: #2e7d32;
 }
