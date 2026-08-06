@@ -2,40 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Dashboard | PawCare</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+    <!-- Navigation -->
+
     <header>
       <nav class="navbar">
         <div class="logo">
-          <i class="fa-solid fa-paw"></i>
-
           <h2>PawCare</h2>
         </div>
 
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
 
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="register.html">Register Pet</a></li>
+
+          <li><a href="appointment.html">Appointments</a></li>
+
           <li><a href="dashboard.html" class="active">Dashboard</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="dashboard">
-      <h1>Registered Pets</h1>
+    <!-- Dashboard -->
 
-      <input type="text" id="search" placeholder="Search by pet or owner..." />
+    <section class="dashboard">
+      <h1>Veterinary Dashboard</h1>
+
+      <p>Manage pets and appointments.</p>
+
+      <!-- Statistics -->
+
+      <div class="dashboard-cards">
+        <div class="card">
+          <h3>Total Pets</h3>
+
+          <h2 id="totalPets">0</h2>
+        </div>
+
+        <div class="card">
+          <h3>Total Appointments</h3>
+
+          <h2 id="totalAppointments">0</h2>
+        </div>
+      </div>
+
+      <!-- Search -->
+
+      <input type="text" id="search" placeholder="Search pet or owner..." />
+
+      <!-- Registered Pets -->
+
+      <h2>Registered Pets</h2>
 
       <table>
         <thead>
@@ -55,6 +98,32 @@
         </thead>
 
         <tbody id="petTable"></tbody>
+      </table>
+
+      <br /><br />
+
+      <!-- Appointments -->
+
+      <h2>Appointments</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Owner</th>
+
+            <th>Pet</th>
+
+            <th>Service</th>
+
+            <th>Veterinarian</th>
+
+            <th>Date</th>
+
+            <th>Time</th>
+          </tr>
+        </thead>
+
+        <tbody id="appointmentBody"></tbody>
       </table>
     </section>
 

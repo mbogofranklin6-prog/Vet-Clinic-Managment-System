@@ -1,4 +1,8 @@
 let pets = JSON.parse(localStorage.getItem("pets")) || [];
+document.getElementById("totalPets").textContent = pets.length;
+
+const appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+document.getElementById("totalAppointments").textContent = appointments.length;
 
 const table = document.getElementById("petTable");
 
@@ -57,3 +61,25 @@ document.getElementById("search").addEventListener("keyup", function () {
 
   displayPets(filtered);
 });
+// ==============================
+// Display Appointments
+// ==============================
+
+const appointmentBody = document.getElementById("appointmentBody");
+
+if (appointmentBody) {
+  appointmentBody.innerHTML = "";
+
+  appointments.forEach((appointment) => {
+    appointmentBody.innerHTML += `
+      <tr>
+        <td>${appointment.ownerName}</td>
+        <td>${appointment.petName}</td>
+        <td>${appointment.service}</td>
+        <td>${appointment.doctor}</td>
+        <td>${appointment.date}</td>
+        <td>${appointment.time}</td>
+      </tr>
+    `;
+  });
+}
