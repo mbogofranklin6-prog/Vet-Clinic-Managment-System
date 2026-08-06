@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treatment | PawCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>PawCare</h2>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="register.html">Register Pet</a>
+
+        <a href="appointment.html">Appointments</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="treatment.html" class="active">Treatment</a>
+
+    </nav>
+
+</header>
+
+<section class="form-section">
+
+<h1>Pet Treatment Record</h1>
+
+<form id="treatmentForm">
+
+<div class="form-group">
+
+<label>Pet Name</label>
+
+<input
+type="text"
+id="petName"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Owner Name</label>
+
+<input
+type="text"
+id="ownerName"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Diagnosis</label>
+
+<input
+type="text"
+id="diagnosis"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Treatment Given</label>
+
+<textarea
+id="treatment"
+rows="4"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>Medication</label>
+
+<input
+type="text"
+id="medication"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Veterinarian</label>
+
+<select id="doctor">
+
+<option value="">Select Vet</option>
+
+<option>Dr. James</option>
+
+<option>Dr. Mercy</option>
+
+<option>Dr. Peter</option>
+
+<option>Dr. Susan</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Next Visit</label>
+
+<input
+type="date"
+id="nextVisit">
+
+</div>
+
+<div class="form-group">
+
+<button type="submit">
+
+Save Treatment
+
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<script src="treatment.js"></script>
+
+</body>
+</html>
