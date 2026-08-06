@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaccinations | PawCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h2>PawCare</h2>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register Pet</a>
+        <a href="appointment.html">Appointments</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="treatments.html">Treatment</a>
+        <a href="vaccinations.html" class="active">Vaccinations</a>
+      </nav>
+    </header>
+
+    <section class="form-section">
+      <h1>Pet Vaccination Record</h1>
+
+      <form id="vaccinationForm">
+        <div class="form-group">
+          <label for="petName">Pet Name</label>
+          <input type="text" id="petName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="ownerName">Owner Name</label>
+          <input type="text" id="ownerName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="vaccine">Vaccine</label>
+          <select id="vaccine" required>
+            <option value="">Select Vaccine</option>
+            <option>Rabies</option>
+            <option>DHPP</option>
+            <option>Leptospirosis</option>
+            <option>Bordetella</option>
+            <option>FVRCP (Cats)</option>
+            <option>FeLV (Cats)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="doctor">Veterinarian</label>
+          <select id="doctor" required>
+            <option value="">Select Veterinarian</option>
+            <option>Dr. James</option>
+            <option>Dr. Mercy</option>
+            <option>Dr. Peter</option>
+            <option>Dr. Susan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="vaccinationDate">Vaccination Date</label>
+          <input type="date" id="vaccinationDate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nextDue">Next Due Date</label>
+          <input type="date" id="nextDue" required />
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea
+            id="notes"
+            rows="4"
+            placeholder="Additional notes..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Save Vaccination Record</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="vaccination.js"></script>
+  </body>
+</html>
