@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Details | PawCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">PawCare</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="register.html">Register Pet</a></li>
+          <li><a href="appointment.html">Appointments</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="form-container">
+      <h2>Pet Profile</h2>
+
+      <div class="pet-card">
+        <p><strong>Owner:</strong> <span id="owner"></span></p>
+
+        <p><strong>Pet Name:</strong> <span id="pet"></span></p>
+
+        <p><strong>Species:</strong> <span id="species"></span></p>
+
+        <p><strong>Breed:</strong> <span id="breed"></span></p>
+
+        <p><strong>Age:</strong> <span id="age"></span></p>
+      </div>
+    </section>
+
+    <script src="pet-details.js"></script>
+  </body>
+</html>
